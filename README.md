@@ -3,26 +3,27 @@
 ## 1) Objetivo
 Construir un mini **data warehouse** a partir de CSVs crudos (`/raw`), generar tablas desnormalizadas en `/DW`, y documentar el proceso con buenas prácticas (entorno virtual, requirements, commits convencionales).
 
-## 2) Estructura del repositorio
+## 2) Estructura del repositorio  
 
-El proyecto adopta una estructura modular basada en las buenas prácticas del desarrollo de un Data Warehouse, siguiendo la metodología Kimball.  
-Cada carpeta refleja una etapa distinta del flujo de datos: desde las fuentes crudas hasta los resultados desnormalizados y la documentación final.
+El proyecto adopta una estructura modular basada en las buenas prácticas del desarrollo de un Data Warehouse, siguiendo la metodología **Kimball**.  
+Cada carpeta representa una etapa distinta del flujo de datos: desde las fuentes crudas hasta los resultados desnormalizados y la documentación final.
 
+```plaintext
 mkt_tp_final/
 │
-├── raw/            # Contiene los datos fuente originales en formato CSV, sin procesar.
+├── raw/              → Contiene los datos fuente originales en formato CSV, sin procesar.
 │
-├── DW/             # Guarda las tablas desnormalizadas generadas por el proceso ETL, listas para análisis.
+├── DW/               → Guarda las tablas desnormalizadas generadas por el proceso ETL.
 │
-├── assets/         # Incluye los diagramas y material visual (DER, esquemas estrella y capturas del dashboard).
+├── assets/           → Incluye los diagramas y material visual (DER, modelos estrella, capturas del dashboard).
 │
-├── venv/           # Entorno virtual local que aísla las dependencias del proyecto (no se versiona en Git).
+├── venv/             → Entorno virtual local que aísla las dependencias del proyecto (no se versiona en Git).
 │
-├── build_dw.py     # Script principal que ejecuta el proceso ETL: extrae, transforma y carga los datos.
+├── build_dw.py       → Script principal que ejecuta el proceso ETL (extract, transform, load).
 │
-├── requirements.txt # Archivo con las dependencias necesarias para reproducir el entorno local.
+├── requirements.txt  → Archivo con las dependencias necesarias para reproducir el entorno local.
 │
-└── README.md       # Documentación del proyecto: objetivos, pasos de instalación, modelo y análisis.
+└── README.md         → Documentación del proyecto: objetivos, instalación, modelo y análisis.
 
 
 ## 3) Requisitos
