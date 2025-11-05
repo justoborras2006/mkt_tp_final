@@ -5,25 +5,18 @@ Construir un mini **data warehouse** a partir de CSVs crudos (`/raw`), generar t
 
 ## 2) Estructura del repositorio  
 
-El proyecto adopta una estructura modular basada en las buenas prácticas del desarrollo de un Data Warehouse, siguiendo la metodología **Kimball**.  
-Cada carpeta representa una etapa distinta del flujo de datos: desde las fuentes crudas hasta los resultados desnormalizados y la documentación final.
+El proyecto está organizado de forma modular siguiendo las buenas prácticas del desarrollo de un **Data Warehouse** bajo la metodología **Kimball**.  
+Cada carpeta representa una etapa del flujo de datos: desde la obtención de las fuentes crudas hasta la generación de los resultados finales y la documentación del proceso.
 
-```plaintext
-mkt_tp_final/
-│
-├── raw/              → Contiene los datos fuente originales en formato CSV, sin procesar.
-│
-├── DW/               → Guarda las tablas desnormalizadas generadas por el proceso ETL.
-│
-├── assets/           → Incluye los diagramas y material visual (DER, modelos estrella, capturas del dashboard).
-│
-├── venv/             → Entorno virtual local que aísla las dependencias del proyecto (no se versiona en Git).
-│
-├── build_dw.py       → Script principal que ejecuta el proceso ETL (extract, transform, load).
-│
-├── requirements.txt  → Archivo con las dependencias necesarias para reproducir el entorno local.
-│
-└── README.md         → Documentación del proyecto: objetivos, instalación, modelo y análisis.
+- **raw/**: contiene los datos fuente originales en formato CSV, sin procesar.  
+- **DW/**: almacena las tablas desnormalizadas generadas por el proceso ETL, listas para su análisis.  
+- **assets/**: reúne el material visual del proyecto, incluyendo el diagrama entidad-relación (DER), los modelos estrella y las capturas del dashboard.  
+- **venv/**: corresponde al entorno virtual local que aísla las dependencias del proyecto y evita conflictos de versiones (no se versiona en Git).  
+- **build_dw.py**: script principal que ejecuta el proceso ETL (extracción, transformación y carga de datos).  
+- **requirements.txt**: archivo que lista todas las librerías necesarias para reproducir el entorno de trabajo.  
+- **README.md**: documento principal del proyecto, que detalla los objetivos, pasos de instalación, supuestos, estructura y diseño del modelo de datos.  
+
+Esta estructura facilita la trazabilidad, la colaboración y la reproducibilidad del proyecto.
 
 
 ## 3) Requisitos
