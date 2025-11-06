@@ -32,44 +32,55 @@ Para ejecutar correctamente el proyecto se requiere el siguiente entorno:
 ## 4) Instalación y ejecución
 
 ### 4.1 Clonar y entrar
-git clone <URL-de-tu-fork>
+```bash
+git clone https://github.com/justoborras2006/mkt_tp_final.git
 cd mkt_tp_final
-
+```
 ### 4.2 Crear y activar entorno virtual
+
 **Windows (PowerShell):**
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
 Si PowerShell bloquea scripts:
+```bash
 Set-ExecutionPolicy RemoteSigned
+```
 
 **macOS / Linux:**
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
+
+---
 
 ### 4.3 Instalar dependencias
+```bash
 pip install -r requirements.txt
+```
 
 Si falta el archivo:
+```bash
 pip install pandas python-dateutil
 pip freeze > requirements.txt
+```
 
 ### 4.4 Ejecutar el ETL
-python build_dw.py
 
-Salida esperada en `/DW`:
-- dim_channel.csv  
-- dim_customer.csv  
-- dim_address.csv  
-- dim_product.csv  
-- dim_store.csv  
-- dim_calendar.csv  
-- fact_sales_order.csv  
-- fact_sales_order_item.csv  
-- fact_payment.csv  
-- fact_shipment.csv  
-- fact_web_session.csv  
-- fact_nps_response.csv  
+Para generar las tablas desnormalizadas, ejecutá el siguiente comando en la terminal (dentro del entorno virtual):
+
+```bash
+python build_dw.py
+```
+
+Si todo funciona correctamente, vas a ver mensajes en la consola indicando que los archivos fueron procesados y exportados.
+
+El resultado final se guarda dentro de la carpeta `/DW`, donde deberías encontrar las tablas fact y dimension generadas por el proceso ETL.  
+Cada CSV representa una tabla lista para análisis, como por ejemplo: `fact_sales_order.csv`, `dim_customer.csv` o `fact_payment.csv`.  
+Podés abrirlas con Excel, Python o cargarlas en una herramienta de BI como Looker Studio para comenzar el análisis de datos.
 
 ## 5) Supuestos
 
