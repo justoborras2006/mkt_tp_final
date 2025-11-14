@@ -1,5 +1,19 @@
 # Trabajo Práctico Final – Marketing Analytics
 
+## Dashboard de Reporte
+
+### Reporte de Ventas y KPIs  
+[![Acceder al Dashboard](https://img.shields.io/badge/Ver%20Dashboard-PowerBI-purple?style=for-the-badge&logo=power-bi)](https://app.powerbi.com/links/I5w-6bIzcp?ctid=3e0513d6-68fa-416e-8de1-6c5cdc319ffa&pbi_source=linkShare)
+
+> **Haz clic en el botón para acceder al dashboard interactivo en Power BI.**
+
+---
+
+### Vista previa del Reporte
+
+![Dashboard de Power BI](https://i.imgur.com/DF0QY9S.png)
+
+
 ## 1) Objetivo
 Construir un mini **data warehouse** a partir de CSVs crudos (`/raw`), generar tablas desnormalizadas en `/DW`, y documentar el proceso con buenas prácticas (entorno virtual, requirements, commits convencionales).
 
