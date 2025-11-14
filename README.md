@@ -11,7 +11,8 @@
 
 ### Vista previa del Reporte
 
-![Dashboard de Power BI](https://i.imgur.com/DF0QY9S.png)
+![Vista previa del Dashboard](./assets/Vista_previa_dashboard.png)
+
 
 
 ## 1) Objetivo
