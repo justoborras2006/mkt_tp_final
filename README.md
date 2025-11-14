@@ -3,7 +3,7 @@
 ## Dashboard de Reporte
 
 ### Reporte de Ventas y KPIs  
-[![Acceder al Dashboard](https://img.shields.io/badge/Ver%20Dashboard-PowerBI-purple?style=for-the-badge&logo=power-bi)](https://app.powerbi.com/links/I5w-6bIzcp?ctid=3e0513d6-68fa-416e-8de1-6c5cdc319ffa&pbi_source=linkShare)
+[![Acceder al Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNTk1ZDhkZDItYWFhOC00N2ZlLWEwYTUtNzFjYmU0MWI2YjNlIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9)
 
 > **Haz clic en el botón para acceder al dashboard interactivo en Power BI.**
 
